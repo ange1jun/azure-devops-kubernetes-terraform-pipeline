@@ -1,5 +1,5 @@
-trigger:
-- main
+trigger: none
+# - main
 
 resources:
 - repo: self
@@ -14,7 +14,8 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      vmImage: 'ubuntu-latest'
+      name: none
+      # vmImage: 'ubuntu-latest'
     steps:
     - task: Docker@2
       inputs:
