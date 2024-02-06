@@ -13,7 +13,7 @@ stages:
   jobs:  
   - job: Build
     displayName: Build
-    pool: self-hosting
+    pool: 'ubuntu-latest'
     steps:
     - task: Docker@2
       inputs:
