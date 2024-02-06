@@ -13,7 +13,8 @@ stages:
   jobs:  
   - job: Build
     displayName: Build
-    pool: 'ubuntu-latest'
+    pool: 
+      vmImage: 'ubuntu-latest'
     steps:
     - task: Docker@2
       inputs:
